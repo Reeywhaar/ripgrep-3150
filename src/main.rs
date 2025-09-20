@@ -5,6 +5,7 @@ mod tests {
     use ignore::gitignore::{GitignoreBuilder, gitconfig_excludes_path};
 
     #[test]
+    // This test fails when no global .gitignore is present
     fn case_with_global() {
         let root = std::env::current_dir().unwrap();
         let mut gitignore_builder = GitignoreBuilder::new(&root);
@@ -33,6 +34,7 @@ mod tests {
     }
 
     #[test]
+    // This test passes when no global .gitignore is present
     fn case_with_manual_global() {
         let root = std::env::current_dir().unwrap();
         let mut gitignore_builder = GitignoreBuilder::new(&root);
