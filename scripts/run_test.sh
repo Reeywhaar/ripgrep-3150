@@ -1,0 +1,1 @@
+docker run --rm -v "$(pwd)":/workspace -w /workspace mcr.microsoft.com/devcontainers/rust:1-1-bookworm cargo test

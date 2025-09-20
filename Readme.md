@@ -1,0 +1,1 @@
+Example case tests can be run in docker with `sh scripts/run_test.sh`
